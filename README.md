@@ -1,5 +1,7 @@
 # Hyperledger Citizens Pulse
 
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
 A fully distributed platform for state/city councils to propose plans and garner voices of the public, built with Hyperledger Fabric.
 
 ## Getting Started
@@ -19,7 +21,7 @@ Following are a few dependencies that need to be installed:
 
 1. Clone the repository
    ```
-   git clone https://github.com/maniankara/hyperledger-citizens-pulse.git
+   git clone https://github.com/hyperledger-labs/citizens-pulse.git
    ```
 2. Install fabric-binaries by running the following command.
    ```
@@ -42,27 +44,28 @@ Following are a few dependencies that need to be installed:
    ./generate.sh webui          # starts the Web server, runs on localhost:3000
    ```
    The CouchDB GUI showing all the databases and documents can be viewed at http://localhost:5984/\_utils/. To make sure that the private-collections (meant for plan data persistence) have been created, check-out the `mychannel_plan$c$c\$$pcollection$plan` and `mychannel_plan$c$c\$$pcollection$plan$private$details` documents.
-5. Navigate to `http://localhost:3000/` in your browser. Signup `hritik` to `Org1` as a dummy user mandatorily.
-
+5. Navigate to `http://localhost:3000/` in your browser. Signup `user` to `Org1` as a dummy user mandatorily.
 
 ## Testing (Manual)
+
 ### Web
-### Mobile - Testing with Android emulator
-* Setup
-1. Start the emulator/AVD
-2. Add a device which supports API 28 (at the time of writing)
-3. Drag and Drop the .apk file on top of the device and accept for installation
-* Test login
-1. Provide credentials `user/test`
 
-### Mobile - Testing with real device
-This is to handle times when you do not have a device to test the mobile part
+### Mobile
 
+- To test with an Android emulator, follow the following steps:
+
+  1.  Start the emulator/AVD
+  2.  Add a device which supports API 28 (at the time of writing)
+  3.  Drag and Drop the .apk file on top of the device and accept for installation
+  4.  Login via the above dummy user by providing credentials `user/test`.
+
+- To testing with a real device:
+  This is to handle times when you do not have a device to test the mobile part.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
